@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+     <!--
+     <class name="com.kk.entity.Actor"  table="ACTOR">
+         <id name="Id"  type="int"  column="ID">
+               <generator class="increment"/>
+         </id>
+         <property name="actorName"  column="ACTORNAME" type="string"  length="20" unique="true" not-null="true"/>
+         <property name="addrs"  column="ADDRS" type="string"  length="20" />
+         <property name="phone"  column="PHONE" type="long"  />
+         <property name="remuneration"  column="REMUNERATION" type="float"   />
+    </class>
+     -->
+     
+    <!-- 
+    <class name="com.kk.entity.Actor"  table="ACTOR">
+        <id name="id" type="int">
+             <column name="ID"  />
+             <generator class="increment"/>
+        </id>
+        <property name="actorName" type="string">
+             <column name="ACTORNAME"  length="20" unique="true"  not-null="true"/>
+        </property>
+        <property name="addrs"  type="string">
+              <column name="ADDRS" length="20"/>
+        </property>
+        <property name="phone"  type="long">
+              <column name="PHONE"  unique="true"/>
+        </property>
+        <property name="remuneration"  type="float">
+              <column name="REMUNERATION" />
+        </property>
+    </class> 
+    -->
+    
+    <class name="com.kk.entity.Actor">
+        <id name="id" type="int">
+           <generator class="increment"/>
+        </id>
+        <property name="actorName" type="string" length="20"  unique="true" not-null="true"/>
+        <property name="addrs"  type="string" length="20"/>
+        <property name="phone"  type="long"  unique="true"/>
+        <property name="remuneration"  type="float"/>
+    </class> 
+</hibernate-mapping>
