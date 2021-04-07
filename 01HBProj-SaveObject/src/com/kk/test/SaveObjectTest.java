@@ -10,7 +10,6 @@ import org.hibernate.cfg.Configuration;
 import com.kk.entity.Actor;
 
 public class SaveObjectTest {
-
 	public static void main(String[] args) {
 		//Bootstrap the Hibernate  (Activate HB f/w)
 		Configuration cfg=new Configuration();

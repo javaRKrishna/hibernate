@@ -2,55 +2,46 @@
 package com.kk.entity;
 
 public class Actor {
-	private int id;
+	private Integer id;
 	private String actorName;
 	private String addrs;
-	private long phone;
-	private float remuneration;
-
-	public int getId() {
+	private Long phone;
+	private Float remuneration;
+	public Integer getId() {
 		return id;
 	}
-
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
-
 	public String getActorName() {
 		return actorName;
 	}
-
 	public void setActorName(String actorName) {
 		this.actorName = actorName;
 	}
-
 	public String getAddrs() {
 		return addrs;
 	}
-
 	public void setAddrs(String addrs) {
 		this.addrs = addrs;
 	}
-
-	public long getPhone() {
+	public Long getPhone() {
 		return phone;
 	}
-
-	public void setPhone(long phone) {
+	public void setPhone(Long phone) {
 		this.phone = phone;
 	}
-
-	public float getRemuneration() {
+	public Float getRemuneration() {
 		return remuneration;
 	}
-
-	public void setRemuneration(float remuneration) {
+	public void setRemuneration(Float remuneration) {
 		this.remuneration = remuneration;
 	}
-
 	@Override
 	public String toString() {
 		return "Actor [id=" + id + ", actorName=" + actorName + ", addrs=" + addrs + ", phone=" + phone
 				+ ", remuneration=" + remuneration + "]";
 	}
+
+	
 }

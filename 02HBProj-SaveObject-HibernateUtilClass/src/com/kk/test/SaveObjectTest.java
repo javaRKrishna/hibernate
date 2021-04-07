@@ -22,8 +22,8 @@ public class SaveObjectTest {
 		Session ses=HibernateUtil.getSession();
 		//prepare Entity class object
 		Actor actor=new Actor();
-		actor.setActorName("ka");
-		actor.setPhone(865555);
+		actor.setActorName("karishna");
+		actor.setPhone(865555L);
 		
 		Transaction tx=null;
 		boolean flag=false;
