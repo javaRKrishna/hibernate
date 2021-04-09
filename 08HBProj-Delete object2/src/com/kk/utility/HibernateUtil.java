@@ -1,4 +1,4 @@
-package src.com.kk.utility;
+package com.kk.utility;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

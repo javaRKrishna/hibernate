@@ -1,5 +1,5 @@
 //Actor.java (Entity class)
-package src.com.kk.entity;
+package com.kk.entity;
 
 public final class Actor {
 	private Integer id;

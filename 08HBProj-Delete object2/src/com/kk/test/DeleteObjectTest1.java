@@ -1,14 +1,12 @@
 //DeleteObjectTest
-package com.nt.test;
-
-import java.sql.SQLException;
+package com.kk.test;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.nt.entity.Actor;
-import com.nt.utility.HibernateUtil;
+import com.kk.entity.Actor;
+import com.kk.utility.HibernateUtil;
 
 public class DeleteObjectTest1 {
 
@@ -16,7 +14,7 @@ public class DeleteObjectTest1 {
 		//get SEssion object
 		Session ses=HibernateUtil.getSession();
 		//load the object
-		Actor actor=ses.get(Actor.class, 1);
+		Actor actor=ses.get(Actor.class, 5);
 		if(actor!=null) {
 		Transaction tx=null;
 		boolean flag=false;

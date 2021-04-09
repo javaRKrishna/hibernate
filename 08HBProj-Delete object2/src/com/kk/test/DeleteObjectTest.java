@@ -1,14 +1,12 @@
 //DeleteObjectTest
-package com.nt.test;
-
-import java.sql.SQLException;
+package com.kk.test;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.nt.entity.Actor;
-import com.nt.utility.HibernateUtil;
+import com.kk.entity.Actor;
+import com.kk.utility.HibernateUtil;
 
 public class DeleteObjectTest {
 
@@ -22,7 +20,7 @@ public class DeleteObjectTest {
 			tx=ses.beginTransaction();
 			  //full object modification
 			  Actor actor=new Actor();
-			  actor.setActorId(2); // must be existing id
+			  actor.setId(5); // must be existing id
 			  ses.delete(actor);
 			flag=true;
 		}//try
